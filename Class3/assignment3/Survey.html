@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        A Dog Lover's Survey
+    </title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <style>
+        /* Styling the Body element i.e. Color,
+		Font, Alignment */
+        body {
+            background-color: #7a939c;
+            font-family: Verdana;
+            text-align: center;
+        }
+
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #fff;
+            max-width: 750px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Styling form-control input,
+		select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 2px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+
+        /* Styling form-control Radio
+		button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+        /* Styling Button */
+        button {
+            background-color: #b4bbb8;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 25%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            margin:auto;
+        }
+    </style>
+</head>
+
+<!-- Details -->
+
+
+<body>
+    <h1>Dog Lover's Survey</h1>
+    <img src="images/dog.png" alt="dog" style="width=137px; height=156px;">
+
+    <!-- Create Form -->
+    <form id="form">
+
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+            <!-- Input Type Text -->
+            <input type="text" id="name" placeholder="Enter your dog's name" />
+        </div </form>
+
+
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+
+            <!-- Input Type Email-->
+            <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+
+        <div class="form-control">
+            <label for="role" id="label-role">
+                What size best describes your dog?
+            </label>
+
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large"> large</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label>
+                Is your dog friendly towards other dogs?
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="friendly1">
+                <input type="radio" id="friendly1" name="disposition">Yes</input>
+            </label>
+            <label for="friendly2">
+                <input type="radio" id="friendly2" name="disposition">No</input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>Activities and Food you give to your dog
+                <small>
+                    <i>(Check all that apply)</i>
+                </small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox" name="inp">Canned dog food</input></label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">Dry dog food</input></label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">Table food</input></label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Fruits and veggies</input></label>
+            <label for="inp-5">
+                <input type="checkbox" name="inp">Ice cream</input></label>
+            <label for="inp-6">
+                <input type="checkbox" name="inp">Take dog for walk</input></label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Play fetch</input></label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Take swimming</input></label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Play at dog park</input></label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Play with children</input></label>
+        </div>
+
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment" placeholder="Enter your comment here">
+			</textarea>
+        </div>
+
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">Submit
+            
+            
+        </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Gallery</title>
+</head>
+
+<body>
+    <!-- Heading Name -->
+    <div class="heading">
+        <h1>Yellowstone National Park</h1>
+    </div>
+    <!-- Image Gallery section all image in one div -->
+    <div class="gallery">
+        <img src="img/image1.jpg" alt="Image 1" class="gallery-img" onclick="showImage(src)">
+        <img src="img/image2.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+        <img src="img/image3.jpg" alt="Image 3" class="gallery-img" onclick="showImage(src)">
+        <img src="img/image4.jpg" alt="Image 4" class="gallery-img" onclick="showImage(src)">
+        <img src="img/image5.jpg" alt="Image 5" class="gallery-img" onclick="showImage(src)">
+        <img src="img/image6.jpg" alt="Image 6" class="gallery-img" onclick="showImage(src)">
+        <img src="img/image7.jpg" alt="Image 7" class="gallery-img" onclick="showImage(src)">
+        <img src="img/image8.jpg" alt="Image 8" class="gallery-img" onclick="showImage(src)">
+        <img src="img/image9.jpg" alt="Image 9" class="gallery-img" onclick="showImage(src)">
+    </div>
+
+    <!-- Image containter where image will show in big size -->
+    <div class="image-popup-container" id="imagePopup">
+        <span class="close-button" onclick="closeImage()">×</span>
+        <img src="" alt="Popup Image" id="popupImage">
+    </div>
+    <script src="script.js"></script>
+    <footer>Copyright &copy; 2023 John Doe Photography</footer>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SAM'S SOUNDS</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.jpg">
+    <style>
+        /* Styling the body */
+
+        * {
+            padding: 0;
+            margin: 0;
+
+
+        }
+
+        /* Styling the background image by 
+		giving its url and position */
+        .container {
+            height: 100vh;
+            width: 100%;
+           
+
+            /* Image used: */
+    
+        }
+
+        /* Styling the list tags to the 
+		right of the navigation bar */
+       
+        .nav li {
+            float: right;
+            list-style: none;
+        }
+
+        /* Styling the anchor tags of 
+		the navigation bar */
+        .nav a {
+            list-style: none;
+            height: 50px;
+            line-height: 50px;
+            font-size: 1rem;
+            font-weight: 550;
+            display: block;
+            padding: 5px 35px;
+            color: black;
+            background: white;
+            border: .05px solid purple;
+            text-decoration: none;
+        }
+
+        /*Styling hover*/
+        a:hover {
+            background-color: purple;
+            color: white;
+        }
+
+        /* Giving position and margin 
+		to the content-div */
+        .content {
+            width: 100%;
+            position: absolute;
+            top: 45%;
+        }
+
+        /* Styling the left-col by 
+		giving margin */
+        .left-col {
+            margin-left: 11%;
+        }
+
+        /* Styling the my sound placed 
+		in the left-col */
+        .left-col h1 {
+            font-size: 50px;
+            color: white;
+            background: purple;
+            border: 2px solid white;
+            padding: 5px;
+             
+        }
+
+        /* Styling the right-col */
+        .right-col {
+            float: right;
+            margin-right: 10%;
+            margin-top: -5%;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Styling the text in the right-col */
+        .right-col p {
+            font-size: 21px;
+            color: white;
+            font-weight: 650;
+            margin-right: 20px;
+        }
+
+        /* Styling the cursor type 
+		of the icon to pointer */
+        #icon {
+            cursor: pointer;
+            width:75px; height: 75px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="nav">
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+ 
+            <li><a href="music.html">MUSIC</a></li>
+            <li><a href="#">HOME</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="left-col">
+         <img src="img/logo.jpg" style="width:200px"; height="200px";>   
+         <h1>SAM'S <br> SOUNDS</h1>
+        </div>
+
+        <div class="right-col">
+
+            <p>Click Here To Listen</p>
+
+            <img src="media/play.png" id="icon">
+        </div>
+    </div>
+
+    <audio id="mysound">
+        <source src="media/1-10 Don't Stop 'Til You Get Enough.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        let mysound = document.getElementById("mysound");
+        let icon = document.getElementById("icon");
+
+        // Creating a function that will change 
+        // pause to play and vice-versa
+        icon.onclick = function () {
+            if (mysound.paused) {
+
+                // If paused then play the 
+                // music and change the image
+                mysound.play();
+                icon.src =
+                    "media/pause.png";
+            } else {
+
+                // If playing then pause the
+                // music and change the image
+                mysound.pause();
+                icon.src =
+                    "media/play.png";
+            }
+        }
+    </script>
+</body>
+
+</html>

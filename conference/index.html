@@ -1,0 +1,285 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advances in Integrative Nutrition Conference</title>
+    <style>
+        /* Styling the body */
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        /* Styling section, giving background
+			image and dimensions */
+        section {
+            width: 100%;
+            height: 100vh;
+            background-image:
+                url('img/nutrition.jpg'
+                );
+             
+            background-size: cover;
+            
+        }
+
+
+        /* Styling the left floating section */
+        section .leftBox {
+            width: 50%;
+            height: 100%;
+            float: left;
+            box-sizing: border-box;
+
+        }
+
+        /* Styling the background of 
+			left floating section */
+        section .leftBox .content {
+            color: #8b0100;
+            font-size: 24px;
+            background: #ede81b;
+            padding: 40px;
+            transition: .5s;
+            opacity: 1.0;
+            padding-bottom: 15px;
+        }
+
+        /* Styling the hover effect 
+			of left floating section */
+        section .leftBox .content:hover {
+            background: #011d42;
+            color: white;
+        }
+
+        /* Styling the header of left 
+			floating section */
+        section .leftBox .content h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 35px;
+            text-transform: uppercase;
+            
+
+
+        }
+
+        /* Styling the paragraph of 
+			left floating section */
+        section .leftBox .content p {
+            margin: 10px 0 0;
+            padding: 0;
+        }
+
+        /* Styling the three events section */
+        section .events {
+            position: relative;
+            width: 50%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            float: right;
+            box-sizing: border-box;
+        }
+
+        /* Styling the links of 
+		the events section */
+        section .events ul {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        /* Styling the lists of the event section */
+        section .events ul li {
+            list-style: none;
+            background: #fff;
+            box-sizing: border-box;
+            height: 200px;
+            margin: 15px 0;
+        }
+
+        /* Styling the time class of events section */
+        section .events ul li .time {
+            position: relative;
+            padding: 20px;
+            background: #011d42;
+            border: white 2px solid;
+            box-sizing: border-box;
+            width: 30%;
+            height: 100%;
+            float: left;
+            text-align: center;
+            transition: .5s;
+        }
+
+        /* Styling the hover effect
+			of events section */
+        section .events ul li:hover .time {
+            background: #8b0100;
+        }
+
+        /* Styling the header of time 
+			class of events section */
+        section .events ul li .time h2 {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 60px;
+            line-height: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        /* Styling the texts of time 
+		class of events section */
+        section .events ul li .time h2 span {
+            font-size: 30px;
+        }
+
+        /* Styling the details 
+		class of events section */
+        section .events ul li .details {
+            padding: 20px;
+            background: #fff;
+            box-sizing: border-box;
+            width: 70%;
+            height: 100%;
+            float: left;
+        }
+
+        /* Styling the header of the 
+		details class of events section */
+        section .events ul li .details h3 {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            font-size: 22px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        /* Styling the lists of details 
+		class of events section */
+        section .events ul li .details p {
+            position: relative;
+            margin: 10px 0 0;
+            padding: 0;
+            font-size: 16px;
+            font-family:Arial, Helvetica, sans-serif ;
+            font-style: italic;
+        }
+
+        /* Styling the links of details
+		class of events section */
+        section .events ul li .details a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 2px solid #011d42;
+            margin-top: 8px;
+            font-size: 18px;
+            transition: .5s;
+            font-family:Arial, Helvetica, sans-serif
+        }
+
+        /* Styling the details class's hover effect */
+        section .events ul li .details a:hover {
+            background: #8b0100;
+            color: #fff;
+            border-color: #011d42 2px;
+        }
+    </style>  
+</head>
+
+<body>
+    <section>
+        <div class="leftBox">
+            <div class="content">
+                <h1>
+                    <center>
+                        In-person and live virtual attendance options available
+                    </center> 
+                </h1>
+                <p>
+                    Our annual Advances in Integrative Nutrition Conference is
+                    scheduled for October 26-28, 2023. The in-person event will
+                    be held on Jefferson's Center City Philadelphia campus with
+                    live virtual attendance options available. The event
+                    features a host of integrative health experts and
+                    includes a keynote presentation by Dr. Mark Levine,
+                    NIH's Chief of Molecular and Clinical Nutrition.
+                </p>
+            </div>
+        </div>   
+        <div class="events">
+            <ul>
+                <li>
+                    <div class="time">
+                        <h2>
+                            26 <br><span>October</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <h3>
+                            When is this event happening?
+                        </h3>
+                        <p>
+                            1:00 PM <br>
+                            The Great Disconnect: Diet, Nutrition, and Health Status in the US <br>
+                            Daniel Monti, MD, MBA
+                        </p>
+                        <a href="oct26.html">View Details</a>
+                    </div>
+                    <div style="clear: both;"></div>
+                </li>
+                <li>
+                    <div class="time">
+                        <h2>
+                            27 <br><span>October</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <h3>
+                            When is this event happening?
+                        </h3>
+                        <p>
+                            3:00 PM<br>
+                            Emerging Data on Key Nutrients for Autoimmune Disease<br>
+                            Sara Gottfried, MD
+                        </p>=
+                        <a href="oct27.html">View Details</a>
+                    </div>
+                    <div style="clear:both;"></div>
+                </li>
+                <li>
+                    <div class="time">
+                        <h2>
+                            28 <br><span>October</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <h3>
+                            When is this event happening?
+                        </h3>
+                        <p>
+                            4:00 PM<br>
+                            Dietary Principles and Metabolic Health <br>
+                            Yiu-Tak Leung, MD, PhD
+                        </p>
+                        <a href="oct28.html">View Details</a>
+                    </div>
+                    <div style="clear:both;"></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
